@@ -1,0 +1,10 @@
+{
+    "app-name": "APP NAME",
+    "app-slogan": "APP Slogan",
+    "app-description": "Short description about App",
+    "logo-URL": "/image/logo.png",
+    "social": {
+        "instagram": "insta_id",
+        "facebook": "fac_id"
+    }
+}
