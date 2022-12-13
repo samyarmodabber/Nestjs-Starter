@@ -1,10 +1,8 @@
 import { useRouter } from 'next/router';
 import SinglePost from '../../components/post/SinglePost';
-import AllPosts from '../../data/posts.json';
+import {getPostBySlug} from '../../data/posts/index';
 
-export function getPostBySlug(Slug) {
-  return AllPosts.find((item) => item.Slug == Slug);
-}
+
 const Post = () => {
   const router = useRouter();
   const { slug = [] } = router.query;

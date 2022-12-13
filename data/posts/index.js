@@ -7,4 +7,10 @@ const allPosts=source2.concat(source1)
 const getPublishedPost = (posts) => {
   return posts.filter((post) => !post.isDraft);
 };
+
+
 export const publishedPosts = getPublishedPost(allPosts);
+
+export function getPostBySlug(Slug) {
+  return publishedPosts.find((item) => item.Slug == Slug);
+}
