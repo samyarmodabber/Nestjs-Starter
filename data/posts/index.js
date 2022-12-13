@@ -12,5 +12,5 @@ const getPublishedPost = (posts) => {
 export const publishedPosts = getPublishedPost(allPosts);
 
 export function getPostBySlug(Slug) {
-  return publishedPosts.find((item) => item.Slug == Slug);
+  return allPosts.find((item) => item.Slug == Slug);
 }

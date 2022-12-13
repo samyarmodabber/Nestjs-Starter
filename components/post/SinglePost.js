@@ -11,7 +11,7 @@ const SinglePost = ({ post }) => {
         className=""
       />
       <h1>{post.Title} </h1>
-      <date>{post.Date} </date>
+      <time dateTime={post.Date}>{post.Date}</time>
       <p>{post.Content}</p>
       <div>Categories:</div>
       {post.Categories.map((cat) => (
